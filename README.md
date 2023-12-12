@@ -1,5 +1,3 @@
-# Transformer-Based-Models
-
 ![ALT](./images/image7.png)
 
 ## BERT (Bidirectional Encoder Representations from Transformers)
