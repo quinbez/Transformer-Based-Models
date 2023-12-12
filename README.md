@@ -10,7 +10,7 @@ There are  two steps involved in the framework of BERT: pre-training and fine-tu
 
 ![ALT](./images/image9.png)
 
-**Pre-Training BERT**
+### **Pre-Training BERT**
 
 During the pre-training phase, the BERT model is trained on a large corpus of unlabeled data using different pre-training tasks. These pre-training tasks typically involve predicting missing words (masked language modeling) or determining the relationship between sentence pairs (next sentence prediction). By training on these tasks, the model learns contextual representations that capture the relationships and meanings of words in a given sentence.
 
@@ -27,7 +27,7 @@ BERT does not rely on traditional left-to-right or right-to-left language models
 These pre-training tasks are designed to help BERT learn a rich context-aware representation of language, which can then be fine tuned on a smaller dataset for various downstream tasks like sentiment analysis, name entity recognition and more. Pre-training on a large corpus of text allows BERT to capture a wide range of language nuances and patterns before being specialized through fine-tuning.  
 
 
-**Input Representation**
+### **Input Representation**
 
 ![ALT](./images/image5.png)
 
@@ -57,7 +57,7 @@ The choice between them depends on the specific requirements of the task at hand
 
 Both models are made up of multiple encoder layers stacked on top of each other. These layers are responsible for the model's ability to understand context and meaning from text data. Each layer includes self-attention mechanisms and feed-forward neural networks, allowing the model to learn from the context of words within a sentence as well as the relationships between sentences.
 
-**Fine-Tuning BERT**
+### **Fine-Tuning BERT**
 
 After pre-training, the BERT model is initialized with the learned parameters. In the fine-tuning phase, the model is further trained using labeled data specific to downstream tasks. The parameters of the model, including both the pre-trained and task-specific parameters, are updated or fine-tuned using gradient-based optimization methods such as backpropagation. Each downstream task requires a separate fine-tuned model, even though they all start with the same pre-trained parameters. Fine-tuning allows the model to adapt its learned representations to the specific task at hand, improving its performance on that task.
 
@@ -71,7 +71,7 @@ GPT  is a state-of-the-art language model that utilizes the transformer architec
 
 Similar to other transformer-based models, GPT undergoes a pre-training phase where it learns from large amounts of unlabeled text data. During pre-training, the model learns to predict missing or masked words within sentences. After pre-training, GPT can be fine-tuned on specific downstream tasks using labeled data, enabling it to perform task-specific language processing.
 
-**Evolution of GPT**
+### **Evolution of GPT**
 
 ![ALT](./images/image12.jpg)
 
@@ -95,7 +95,7 @@ The architecture of the GPT model is based on the transformer model. Transformer
 
 The GPT model undergoes a pre-training phase in which it is trained on large amounts of text data using unsupervised learning techniques. This pre-training process enables the model to learn representations of natural language. These learned representations can be further fine-tuned for specific downstream tasks, adapting the model to perform well on tasks such as summarization, translation, or sentiment analysis.
 
-**How do GPT models work?**
+### **How do GPT models work?**
 
 GPT models work by utilizing a decoder-only transformer architecture, which means they lack an encoder component. The decoder takes the output from the transformer blocks and generates the output sequence word by word. At each step, the model predicts the probability distribution over the vocabulary for the next word and samples from this distribution to generate the next token. This process is known as autoregression.
 
@@ -135,7 +135,7 @@ The T5 model enables the use of the same components across diverse tasks through
 
 **Same Hyperparameters**: Since the model architecture remains unchanged across tasks, the hyperparameters such as batch size, learning rate, and the number of layers in the model can remain consistent. This consistency in hyperparameters simplifies the fine-tuning process for new tasks, as there is no need to start the hyperparameter search from scratch.
 
-**Model**
+### **Model**
 
 Early results on transfer learning for NLP leveraged recurrent neural networks, but it has recently become more common to use models based on the “Transformer” architecture. The Transformer was initially shown to be effective for machine translation, but it has subsequently been used in a wide variety of NLP settings. 
 
