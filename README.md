@@ -75,7 +75,7 @@ Similar to other transformer-based models, GPT undergoes a pre-training phase wh
 
 **Evolution of GPT**
 
-![ALT](./images/image12.png)
+![ALT](./images/image12.jpg)
 
 The continuous improvement of the GPT model can be attributed to several factors, including advancements in its architecture, increased availability of computing power, and the development of novel techniques for fine-tuning. These advancements have led to the creation of larger and more powerful GPT models that can perform a wider range of NLP tasks with remarkable accuracy and fluency.
 
