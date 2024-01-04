@@ -1,6 +1,8 @@
+*Authors: Bezawit Abebaw and Biruk Abere*
+
 ![ALT](./images/image7.png)
 
-## BERT (Bidirectional Encoder Representations from Transformers)
+## **BERT (Bidirectional Encoder Representations from Transformers)**
 
 BERT is a popular language model introduced by Google. BERT is designed to pre-train deep bidirectional representations from unlabeled text by considering both left and right context in all layers. This allows BERT to capture contextual information and generate rich representations of words.
 
@@ -64,7 +66,7 @@ After pre-training, the BERT model is initialized with the learned parameters. I
 ![ALT](./images/image1.png)
 
 During fine-tuning, BERT can be trained on specific natural language processing (NLP) tasks by replacing the fully connected output layer of the model with task-specific output layers. When fine-tuning BERT for a particular NLP task, the original pre-trained BERT model, which has already learned contextualized representations, is adapted to the specific task by training on labeled data. By replacing the output layer and fine-tuning on labeled data, BERT can be effectively customized and tailored to various NLP tasks. 
-## RoBERTa (Robustly Optimized BERT Pre-Training Approach)
+## **RoBERTa (Robustly Optimized BERT Pre-Training Approach)**
 
 RoBERTa is a transformer-based language model that processes information by using self-attention. It has been demonstrated to perform better on a range of NLP tasks, including language translation, text categorization, and question answering, than BERT. It builds on BERT and modifies key hyperparameters, removing the next-sentence pretraining objective and training with much larger mini-batches and learning rates. 
 
@@ -119,7 +121,7 @@ RoBERTa uses larger byte-level BPE vocabulary with 50K subword units instead of 
 
 So, in RoBERTa, they decided to use a larger byte-level BPE vocabulary with 50,000 subword units. This means that the vocabulary can handle even more variations and combinations of characters and words. It can represent a wider range of language patterns and help RoBERTa understand and generate more diverse text.
 
-## DistilBERT
+## **DistilBERT**
 
 DistilBERT, also known as Distilled BERT, is a compressed and more lightweight version of the BERT model. It aims to retain much of BERT's performance while reducing its size and computational requirements.
 
@@ -147,7 +149,7 @@ To train the student model, cross-entropy loss function is commonly used. The cr
 DistilBERT typically uses a smaller vocabulary compared to BERT. This reduction in vocabulary size further helps reduce the memory requirements and inference time of the model. Two specific parts from DistilBERT: the token-type embeddings and the pooler were removed. By doing this, DistilBERT was made smaller and faster. The number of layers in DistilBERT were reduced by half compared to BERT. By reducing the number of layers, DistilBERT became more compact while still retaining important functionality.
 
 
-## GPT (Generative Pre-trained Transformer)
+## **GPT (Generative Pre-trained Transformer)**
 
 GPT  is a state-of-the-art language model that utilizes the transformer architecture for natural language processing tasks. It is a deep learning model that has achieved remarkable success in various language-related tasks, including language generation, text completion, question answering, and more. 
 
@@ -194,7 +196,7 @@ During training, GPT models are pre-trained on large amounts of text data using 
 Once pre-training is complete, the model can be fine-tuned on specific downstream tasks. Fine-tuning involves training the model on task-specific labeled data, adjusting the model's parameters to optimize its performance on the particular task at hand.
 
 
-## Text-To-Text Transfer Transformer (T5)
+## **Text-To-Text Transfer Transformer (T5)**
 
 Text to text transformers are based on the Transformer architecture, which consists of an encoder and a decoder. The encoder processes the input text and extracts its representations, while the decoder generates the output text based on those representations.
 
